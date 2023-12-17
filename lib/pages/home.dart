@@ -1,11 +1,32 @@
+import 'package:diet_app/models/category_model.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
-class HomePage extends StatelessWidget {
-  const HomePage({super.key});
+class HomePage extends StatefulWidget {
+  HomePage({super.key});
+
+  @override
+  State<HomePage> createState() => _HomePageState();
+}
+
+class _HomePageState extends State<HomePage> {
+  List<CategoryModel> categories = [];
+
+  // Function that makes available the categories
+  void _getCategories() {
+    categories = CategoryModel.getCategories();
+  }
+
+  @override
+  void initState() {
+    super.initState();
+    _getCategories();
+  }
 
   @override
   Widget build(BuildContext context) {
+    // so that the list of categories is filled first before the scaffold widgets are rendered
+    _getCategories();
     return Scaffold(
       appBar: appBar(),
       backgroundColor: Colors.white,
@@ -14,19 +35,27 @@ class HomePage extends StatelessWidget {
         const SizedBox(
           height: 40,
         ),
-        const Column(
+        Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Padding(
+            const Padding(
               padding: EdgeInsets.only(left: 20),
               child: Text(
-                "Categories",
+                "Category",
                 style: TextStyle(
                   color: Colors.black,
                   fontSize: 18,
                   fontWeight: FontWeight.w600,
                 ),
               ),
-            )
+            ),
+            const SizedBox(
+              height: 15,
+            ),
+            Container(
+              height: 150,
+              color: Colors.green,
+            ),
           ],
         )
       ]),
