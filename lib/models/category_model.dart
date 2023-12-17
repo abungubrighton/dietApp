@@ -9,11 +9,9 @@ class CategoryModel {
   CategoryModel(
       {required this.name, required this.iconPath, required this.boxColor});
 
-  /**
-   * Method that returns a list of category Objects
-   * Defined as a STATIC METHOD so it can be accessed without instantiation of CategoryModel class
-   * 
-   */
+  /// Method that returns a list of category Objects
+  /// Defined as a STATIC METHOD so it can be accessed without instantiation of CategoryModel class
+  ///
 
   static List<CategoryModel> getCategories() {
     List<CategoryModel> categories = [];
@@ -22,13 +20,13 @@ class CategoryModel {
       CategoryModel(
           name: "Salad",
           iconPath: 'assets/icons/plate.svg',
-          boxColor: const  Color(0xFF92A3FD)),
+          boxColor: const Color(0xFF92A3FD)),
     );
     categories.add(
       CategoryModel(
           name: "Cake",
           iconPath: 'assets/icons/pancakes.svg',
-          boxColor: const Color(0xFFC5BBF2)),
+          boxColor: const Color(0xFFC58BF2)),
     );
     categories.add(
       CategoryModel(
@@ -40,7 +38,7 @@ class CategoryModel {
       CategoryModel(
           name: "Smoothies",
           iconPath: 'assets/icons/orange-snacks.svg',
-          boxColor: const Color(0xFF92A3FD)),
+          boxColor: const Color(0xFFC58BF2)),
     );
     return categories;
   }
