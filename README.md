@@ -1,6 +1,8 @@
 # diet_app
 
-A new Flutter project.
+A Flutter App for tracking your diet 
+![Screenshot_1703521365](https://github.com/abungubrighton/diet_app/assets/111748970/323a449a-438c-436b-9f8d-6d723c7ea882)
+
 
 ## Getting Started
 
