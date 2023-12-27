@@ -6,7 +6,7 @@ class DietModel {
   String level;
   String duration;
   String calorie;
-  bool viewIsSelected;
+  bool viewIsSelected; //control display of the button text
   Color boxColor;
 
   DietModel({
@@ -28,7 +28,7 @@ class DietModel {
         level: "Easy",
         calorie: "180KCal",
         viewIsSelected: true,
-        boxColor: const Color(0xFF92A3FD),
+        boxColor: const Color(0xff92A3FD),
         duration: "30mins"));
     diets.add(DietModel(
         name: "Canai Bread",
@@ -36,7 +36,7 @@ class DietModel {
         level: "Easy",
         calorie: "230KCal",
         viewIsSelected: false,
-        boxColor: const Color(0xFFC58BF2),
+        boxColor: const Color(0xffC58BF2),
         duration: "20mins"));
     diets.add(DietModel(
         name: "Honey Pancake",
@@ -44,7 +44,7 @@ class DietModel {
         level: "Easy",
         calorie: "180KCal",
         viewIsSelected: true,
-        boxColor: const Color(0xFF92A3FD),
+        boxColor: const Color(0xff92A3FD),
         duration: "30mins"));
     return diets;
   }
