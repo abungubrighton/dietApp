@@ -1,4 +1,6 @@
-# diet_app
+# A Diet Tracking Application
+helps you track your diet intake
+with each diet accompanied with a recipe, time taken to prepare it and how much calories it contains
 
 A Flutter App for tracking your diet 
 ![Screenshot_1703693300](https://github.com/abungubrighton/diet_app/assets/111748970/ed211880-e752-4b38-93b3-8f1e0fe3601b)
